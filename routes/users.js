@@ -6,11 +6,11 @@ router.get('/', function(req, res, next) {
   res.json([
     {
       id: 1,
-      username: "samsepi0l"
+      username: "Tri Pham"
     },
     {
       id: 2,
-      username: "D0loresH4ze"
+      username: "Spicy Ramyun"
     }
   ]);
 });
