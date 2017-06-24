@@ -27,7 +27,7 @@ mongoose.connection.on('error', (err) => {
 
 // Get API Routes.
 const users = require('./server/routes/users');
-// const users = require('./routes/users');
+const test = require('./routes/test');
 
 const app = express();
 
@@ -47,6 +47,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.use('/users', users);
+app.use('/test', test);
 
 // Passport Middleware.
 app.use(passport.initialize());
